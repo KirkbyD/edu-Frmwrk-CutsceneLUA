@@ -1,0 +1,25 @@
+animascript(
+	"FINALQ4CamTrigger",
+	sgcmd(
+		trigger(
+			settriggerpoint(-100.86, 205.34, -100.33),
+			setradius(40.0),
+			settriggerobjects(1, "Attacker")
+		)
+	),
+	pgcmd(
+		moveto(
+			setsubsystem("models"),
+			settarget("0 Test"),
+			setendposition(3, 85.0, 216.0, 72.0),
+			setduration(40.0),
+			seteaseinout("D", 0.0, 0.0)
+		),
+		moveto(
+			setsubsystem("camera"),
+			setendposition(3, 85, 216, 0),
+			setduration(35.0),
+			seteaseinout("D", 0.0, 10.0)
+		)
+	)
+);

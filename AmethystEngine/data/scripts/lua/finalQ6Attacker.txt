@@ -1,0 +1,82 @@
+animascript(
+	"FINALQ6Attacker",
+	pgcmd(
+		moveto(
+			setsubsystem("models"),
+			settarget("0 Test"),
+			setendposition(3, 74.6, 212.0, 75.0),
+			setduration(2.0),
+			seteaseinout("D", 0.0, 0.0)
+		)
+	),
+	pgcmd(
+		followcurve(
+			setsubsystem("models"),
+			settarget("Attacker"),
+			setcontrolpoint(130.0, 212.0, 82.0),
+			setendpospoints(1, 121.0, 212.0, 113.0),
+			setduration(9.0),
+			seteaseinout("D", 5.0, 0.0)
+		),
+		rotateto(
+			setsubsystem("models"),
+			settarget("Attacker"),
+			setendorientation(174.7521, 49.84733, 180),
+			setduration(10.0)
+		),
+		followcurve(
+			setsubsystem("models"),
+			settarget("0 Test"),
+			setcontrolpoint(130.0, 212.0, 82.0),
+			setendpospoints(1, 121.0, 212.0, 113.0),
+			setduration(9.0),
+			seteaseinout("D", 5.0, 0.0)
+		)
+	),
+	pgcmd(
+		followcurve(
+			setsubsystem("models"),
+			settarget("Attacker"),
+			setcontrolpoint(170.0, 212.0, 118.0),
+			setendpospoints(1, 139.0, 212.0, 53.0),
+			setduration(9.0),
+			seteaseinout("D", 0.0, 5.0)
+		),
+		rotateto(
+			setsubsystem("models"),
+			settarget("Attacker"),
+			setendorientation(162.0, -43.0, -158.7),
+			setduration(10.0)
+		),
+		followcurve(
+			setsubsystem("models"),
+			settarget("0 Test"),
+			setcontrolpoint(170.0, 212.0, 118.0),
+			setendpospoints(1, 139.0, 212.0, 53.0),
+			setduration(9.0),
+			seteaseinout("D", 0.0, 5.0)
+		)
+	),
+	pgcmd (
+		followobject(
+			setsubsystem("models"),
+			setsourcesubsystem("models"),
+			settarget("Defender"),
+			setsource("Attacker"),
+			setduration(20.0),
+			setspeed(20.0),
+			setradi(1.0, 150.0),
+			setoffset(15.0, 10.0, 5.0)
+		),
+		followobject(
+			setsubsystem("models"),
+			setsourcesubsystem("models"),
+			settarget("Defender"),
+			setsource("0 Test"),
+			setduration(20.0),
+			setspeed(20.0),
+			setradi(1.0, 150.0),
+			setoffset(15.0, 10.0, 5.0)
+		)		
+	)
+);

@@ -1,0 +1,16 @@
+animascript(
+	"FINALQ4Trigger",
+	sgcmd(
+		trigger(
+			rotateto(
+				setsubsystem("models"),
+				settarget("Attacker"),
+				setendorientation(0.0, 0.0, 0.0),
+				setduration(20.0)
+			),
+			settriggerpoint(0.0, 210.0, 0.0),
+			setradius(30.0),
+			settriggerobjects(1, "Attacker")
+		)
+	)
+);

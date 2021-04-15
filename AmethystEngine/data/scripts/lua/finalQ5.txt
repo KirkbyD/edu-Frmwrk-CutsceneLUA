@@ -1,0 +1,13 @@
+animascript(
+	"FINALQ5",
+	sgcmd(
+		pgcmd(
+		moveto(
+			setsubsystem("models"),
+			settarget("Defender"),
+			setendposition(3, 98.86, 212.0, 75.33),
+			setduration(30.0),
+			seteaseinout("D", 0.0, 0.0)
+		)
+	)
+);

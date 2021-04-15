@@ -1,0 +1,13 @@
+animascript(
+	"FINALQ4",
+	pgcmd(
+		followcurve(
+			setsubsystem("models"),
+			settarget("Attacker"),
+			setcontrolpoint(-46.0, 205.0, -60.0),
+			setendpospoints(1, 74.6, 212.0, 75.0),
+			setduration(30.0),
+			seteaseinout("D", 5.0, 5.0)
+		)
+	)	
+);

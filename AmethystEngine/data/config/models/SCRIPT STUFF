@@ -1,0 +1,64 @@
+SCRIPT INFO
+INITIAL CAMERA STATE - BIND TO INVISIBLE OBJ AFTER GATHERING ALL INFO
+-387.0f 209.0f 533.2f
+
+Q5????
+
+
+
+moveto(
+			setsubsystem("models"),
+			settarget("Cannonball01"),
+			setendposition(3, 76.08, 212.5, 75.27),
+			setduration(0.01),
+			seteaseinout("D", 0.0, 0.0)
+		),
+		moveto(
+			setsubsystem("models"),
+			settarget("Cannonball02"),
+			setendposition(3, 76.08, 212.5, 75.83),
+			setduration(0.01),
+			seteaseinout("D", 0.0, 0.0)
+		),
+		moveto(
+			setsubsystem("models"),
+			settarget("Cannonball01"),
+			setendposition(98.86, 205.34, 75.33),
+			setduration(3.0),
+			seteaseinout("D", 0.0, 0.0)
+		),
+		moveto(
+			setsubsystem("models"),
+			settarget("Cannonball02"),
+			setendposition(98.86, 205.34, 75.33),
+			setduration(3.0),
+			seteaseinout("D", 0.0, 0.0)
+		),
+		moveto(
+			setsubsystem("models"),
+			settarget("CannonBall03"),
+			setendposition(3, 76.08, 212.5, 76.3),
+			setduration(0.01),
+			seteaseinout("D", 0.0, 0.0)
+		),
+		moveto(
+			setsubsystem("models"),
+			settarget("CannonBall04"),
+			setendposition(3, 76.01, 212.63, 76.91),
+			setduration(0.01),
+			seteaseinout("D", 0.0, 0.0)
+		),
+		moveto(
+			setsubsystem("models"),
+			settarget("Cannonball03"),
+			setendposition(98.86, 205.34, 75.33),
+			setduration(3.0),
+			seteaseinout("D", 0.0, 0.0)
+		),
+		moveto(
+			setsubsystem("models"),
+			settarget("Cannonball04"),
+			setendposition(98.86, 205.34, 75.33),
+			setduration(3.0),
+			seteaseinout("D", 0.0, 0.0)
+		)

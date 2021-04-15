@@ -1,0 +1,11 @@
+animascript(
+	"FINALQ6Camera",
+	pgcmd(
+		moveto(
+			setsubsystem("camera"),
+			setendposition(3, 0, 216, -300),
+			setduration(10.0),
+			seteaseinout("D", 0.0, 10.0)
+		)
+	)
+)

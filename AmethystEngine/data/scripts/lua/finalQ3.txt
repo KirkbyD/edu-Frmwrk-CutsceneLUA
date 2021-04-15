@@ -1,0 +1,18 @@
+animascript(
+	"FINALQ3",
+	pgcmd(
+		moveto(
+			setsubsystem("models"),
+			settarget("0 Test"),
+			setendposition(3, 98.86, 205.34, 75.33),
+			setduration(4.0),
+			seteaseinout("D", 0.0, 0.0)
+		),
+		moveto(
+			setsubsystem("camera"),
+			setendposition(3, -293.0, 209.0, -208.36),
+			setduration(4.0),
+			seteaseinout("D", 0.0, 10.0)
+		)
+	)	
+);

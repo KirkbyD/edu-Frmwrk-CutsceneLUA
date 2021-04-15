@@ -1,0 +1,61 @@
+animascript(
+	"FINALQ7Attacker",
+	pgcmd(
+		moveto(
+			setsubsystem("models"),
+			settarget("Attacker"),
+			setendposition(3, -63.6, 212.0, -133),
+			setduration(3.0),
+			seteaseinout("D", 0.0, 0.0)
+		),
+		moveto(
+			setsubsystem("models"),
+			settarget("0 Test"),
+			setendposition(3, -63.6, 212.0, -133),
+			setduration(3.0),
+			seteaseinout("D", 0.0, 0.0)
+		)
+	),
+	pgcmd(
+		followcurve(
+			setsubsystem("models"),
+			settarget("Attacker"),
+			setcontrolpoint(-97.0, 212.0, -143),
+			setendpospoints(1, -112.0, -20.0, -200.0),
+			setduration(10.0),
+			seteaseinout("D", 2.0, 0.0)
+		),
+		rotateto(
+			setsubsystem("models"),
+			settarget("Attacker"),
+			setendorientation(-122.0, -43.0, -158.7),
+			setduration(10.0)
+		),
+		followcurve(
+			setsubsystem("models"),
+			settarget("0 Test"),
+			setcontrolpoint( -97.0, 212.0, -143),
+			setendpospoints(1, -112.0, -20.0, -200.0),
+			setduration(10.0),
+			seteaseinout("D", 2.0, 0.0)
+		),
+		moveto(
+			setsubsystem("camera"),
+			setendpospoints(1, -90.0, 40.0, -170.0),
+			setduration(17.0),
+			seteaseinout("D", 0.0, 0.0)
+		)
+	),
+	sgcmd(
+		followobject(
+			setsubsystem("models"),
+			setsourcesubsystem("models"),
+			settarget("Defender"),
+			setsource("0 Test"),
+			setduration(100.0),
+			setspeed(20.0),
+			setradi(1.0, 70.0),
+			setoffset(0.0, 0.0, 0.0)
+		)
+	)
+);
